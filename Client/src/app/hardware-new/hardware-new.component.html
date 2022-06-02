@@ -1,0 +1,52 @@
+<h2>{{'hardwers.form.save' | translate}}</h2>
+<div>
+  <h3>{{'hardwers.createTitle' | translate}}</h3>
+  <div>
+    <label>{{'hardwers.form.code' | translate}}:
+      <div>
+        <input #code />
+      </div>
+    </label>
+  </div>
+  <div>
+    <label>{{'hardwers.form.name' | translate}}:
+      <div>
+        <input #name />
+      </div>
+    </label>
+  </div>
+  <div>
+    <label>{{'hardwers.form.type' | translate}}:
+      <div>
+        <select #type >
+          <option value="CPU">CPU</option>
+          <option value="GPU">GPU</option>
+          <option value="MBO">MBO</option>
+          <option value="RAM">RAM</option>
+          <option value="STORAGE">Pohrana podataka</option>
+          <option value="OTHER">Ostalo</option>
+        </select>
+      </div>
+    </label>
+  </div>
+  <div>
+    <label>{{'hardwers.form.available' | translate}}:
+      <div>
+        <input type="number" #stock />
+      </div>
+    </label>
+  </div>
+  <div>
+    <label>{{'hardwers.form.price' | translate}}:
+      <div>
+        <input type="number" #price />
+      </div>
+    </label>
+  </div>
+
+  <button (click)="add(code.value, name.value, type.value, +stock.value, +price.value); code.value=''; name.value=''; type.value='CPU'; stock.value=''; price.value=''">
+    {{'hardwers.form.save' | translate}}
+  </button>
+
+  <button (click)="goBack()">{{'hardwers.form.cancel' | translate}}</button>
+</div>

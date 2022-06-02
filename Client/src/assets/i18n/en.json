@@ -1,0 +1,63 @@
+{
+    "loginNavbar": {
+        "currentUsernameMessage": "Logged in as",
+        "logout": "Sign out"
+    },
+    "language": {
+        "change": "Change language",
+        "croatian": "Croatian",
+        "english": "English"
+    },
+    "navbar": {
+        "username": "Username",
+        "role": "Role",
+        "login": "Login",
+        "logout": "Logout"
+    },
+    "login": {
+        "title": "Login",
+        "username": "Username",
+        "usernamePlaceholder": "Input username",
+        "password": "Password",
+        "passwordPlaceholder": "Input password",
+        "loginButton": "Login",
+        "loginError": "Login failed! Check your credentials and try again."
+    },
+    "main": {
+        "hardwareLink": "Hardwers"
+    },
+    "404": {
+        "pageNotFoundMessage": "The requested page was not found",
+        "returnToHomepage": "Return to home page"
+    },
+    "403": {
+        "pageForbiddenMessage": "Insufficient privileges to access this page!",
+        "returnToHomepage": "Return to home page"
+    },
+    "hardwers": {
+        "title": "Hardware list",
+        "create": "Add new hardware",
+        "price": "Price",
+        "details": "Details",
+        "edit": "Edit",
+        "delete": "Delete",
+        "createTitle": "Add new hardware",
+        "editTitle": "Editting hardware",
+        "form": {
+            "code": "Code",
+            "name": "Name",
+            "type": "Type",
+            "available": "Stock",
+            "price": "Price",
+            "cancel": "Go back",
+            "save": "Add hardware"
+        },
+        "detailsForm": {
+            "hardwareDetails": "Details about",
+            "ratesMessage6": "This hardware can be bought in 6 installments.",
+            "reviews": "Reviews for this hardware",
+            "zeroReviews": "There are currently no reviews for this hardware",
+            "back": "Go back"
+        }
+    }
+}

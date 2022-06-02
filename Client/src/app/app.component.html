@@ -1,0 +1,9 @@
+<div class="container-fluid">
+  <div class="w-100 text-end" *ngIf="authenticationService.isUserAuthenticated()">{{'loginNavbar.currentUsernameMessage' | translate}}
+    <strong>{{authenticationService.getAuthenticatedUserUsername()}}</strong> | <a href="#" (click)="logout()" class="link-primary">{{'loginNavbar.logout' | translate}}</a>
+  </div>
+  <app-language-picker></app-language-picker>
+  <div class="m-5">
+    <router-outlet></router-outlet>
+  </div>
+</div>

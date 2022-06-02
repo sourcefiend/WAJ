@@ -1,0 +1,63 @@
+{
+    "loginNavbar": {
+        "currentUsernameMessage": "Prijavljeni ste kao",
+        "logout": "Odjava"
+    },
+    "language": {
+        "change": "Promjeni jezik",
+        "croatian": "Hrvatski",
+        "english": "Engleski"
+    },
+    "navbar": {
+        "username": "Korisničko ime",
+        "role": "Uloga",
+        "login": "Prijava",
+        "logout": "Odjava"
+    },
+    "login": {
+        "title": "Prijava",
+        "username": "Korisničko ime",
+        "usernamePlaceholder": "Unesite korisničko ime",
+        "password": "Lozinka",
+        "passwordPlaceholder": "Unesite lozinku",
+        "loginButton": "Prijava",
+        "loginError": "Neuspješna prijava! Provjerite podatke i pokušajte ponovno."
+    },
+    "main": {
+        "hardwareLink": "Hardveri"
+    },
+    "404": {
+        "pageNotFoundMessage": "Tražena stranica nije pronađena",
+        "returnToHomepage": "Povratak na početnu stranicu"
+    },
+    "403": {
+        "pageForbiddenMessage": "Nemate pravo pristupa traženoj stranici!",
+        "returnToHomepage": "Povratak na početnu stranicu"
+    },
+    "hardwers": {
+        "title": "Popis hardvera",
+        "create": "Unesi novi hardver",
+        "price": "Cijena",
+        "details": "Detalji",
+        "edit": "Uređivanje",
+        "delete": "Brisanje",
+        "createTitle": "Unesi novi hardver",
+        "editTitle": "Uređivanje podataka hardvera",
+        "form": {
+            "code": "Šifra",
+            "name": "Naziv",
+            "type": "Tip",
+            "available": "Broj komada na stanju",
+            "price": "Cijena",
+            "cancel": "Povratak",
+            "save": "Unesi hardver"
+        },
+        "detailsForm": {
+            "hardwareDetails": "Detalji o",
+            "ratesMessage6": "Ovaj hardware se može kupiti na 6 rata.",
+            "reviews": "Recenzije za ovaj hardware",
+            "zeroReviews": "Trenutno nema recenzija za ovaj hardver",
+            "back": "Povratak"
+        }
+    }
+}
