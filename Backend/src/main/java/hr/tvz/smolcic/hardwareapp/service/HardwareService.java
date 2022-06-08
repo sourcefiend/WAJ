@@ -33,7 +33,7 @@ public class HardwareService implements IHardwareService {
 
     @Override
     public Optional<HardwareDTO> save(HardwareCommand command) {
-        return this.hardwareRepository.save(mapHardwareCommandToHardware(command)).map(hw -> new HardwareDTO(hw.getName(), hw.getPrice(), hw.getCode()));
+        return this.hardwareRepository.save(mapHardwareCommandToHardware(command)).map(hw -> new HardwareDTO(hw.getName(), hw.getPrice(), hw.getCode(), hw.getStock()));
     }
 
     @Override
@@ -43,7 +43,7 @@ public class HardwareService implements IHardwareService {
 
 
     private HardwareDTO mapHardwareToDTO(final Hardware hardware) {
-        return new HardwareDTO(hardware.getName(), hardware.getPrice(), hardware.getCode());
+        return new HardwareDTO(hardware.getName(), hardware.getPrice(), hardware.getCode(), hardware.getStock());
     }
 
     private Hardware mapHardwareCommandToHardware(final HardwareCommand hardwareCommand) {

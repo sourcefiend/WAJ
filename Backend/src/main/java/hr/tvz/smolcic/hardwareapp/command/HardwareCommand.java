@@ -6,9 +6,11 @@ import hr.tvz.smolcic.hardwareapp.util.validators.HardwareTypeEnumValue;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.PositiveOrZero;
+import java.io.Serializable;
 
-public class HardwareCommand {
+public class HardwareCommand implements Serializable {
 
+    Integer id;
     @NotBlank(message = "Hardware name must not be empty.")
     String name;
 
@@ -28,12 +30,24 @@ public class HardwareCommand {
     @PositiveOrZero(message = "Stock amount must be entered as a positive integer.")
     Integer stock;
 
+    public HardwareCommand() {
+    }
+
     public HardwareCommand(String name, String code, double price, String hardwareType, Integer stockAmount) {
         this.name = name;
         this.code = code;
         this.price = price;
         this.type = hardwareType;
         this.stock = stockAmount;
+    }
+
+    public HardwareCommand(Integer id, String name, String code, double price, String type, Integer stock) {
+        this.id = id;
+        this.name = name;
+        this.code = code;
+        this.price = price;
+        this.type = type;
+        this.stock = stock;
     }
 
     public String getName() {
